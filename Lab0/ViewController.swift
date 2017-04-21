@@ -9,9 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var mypic: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mypic.transform = CGAffineTransform(rotationAngle: ((90.0 * CGFloat(Double.pi)) / 180.0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
